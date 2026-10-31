@@ -1859,5 +1859,35 @@ scope 未知。`gh` CLI 的 keyring token 仍然失效（`gh auth status` 报 `T
 **没有写入任何文件、没有进 git 配置、没有打印到日志或提交信息**；`.gitignore` 未改；
 remote 用的是 SSH 地址，**URL 里不含任何凭据**。
 
-**远端历史的形状**：1 个交付提交（`dc43c25`）+ 1 个文档更正提交（本节）。
-仍然不伪造施工过程 —— 追加本节这件事本身也要留痕，否则 13.14 会与远端事实矛盾。
+   **远端历史的形状**：1 个交付提交（`dc43c25`）+ 1 个文档更正提交（本节）。
+   仍然不伪造施工过程 —— 追加本节这件事本身也要留痕，否则 13.14 会与远端事实矛盾。
+
+### 13.16 仓库可见性已改为 public：13.15 的「选 private」作废
+
+13.15 里「选 private，因为库里含 `训练集` 标准答案」是当时的默认取值，
+**用户随后明确要求设为 public**，已执行 `PATCH /repos/wbhlucky/dianshi-assess-c04`
+（body `{"private":false}`）→ HTTP 200，`private=False`、`visibility=public`。
+按 13.13.1 只追加不回填，故在此更正。
+
+**验证（三条独立证据）**：
+
+1. **未认证** API 读 `GET /repos/wbhlucky/dianshi-assess-c04` → 200，`private=False`，`default_branch=main`。
+2. 该账号的公开仓库列表由 5 个变 6 个，新增项就是 `dianshi-assess-c04`。
+3. **匿名** raw 读取 `raw.githubusercontent.com/wbhlucky/dianshi-assess-c04/main/{README.md,agent.md,requirements.txt}`
+   全部 200，且字节数与本地逐一对齐：`agent.md` 130779、`README.md` 48365、`requirements.txt` 1294
+   ⇒ 推上去的内容与本地**字节一致**，不是空壳或旧版本。
+
+**转公开对防作弊边界（O10）没有影响。** O10 约束的是「产品代码不得内嵌训练集答案」，
+与仓库可见性无关：`训练集` 本来就随初始提交入库（见 13.14），
+`test_no_leakage.py` 的 `SKIP_DIRS` 仍把它排除在答案扫描之外，
+三个密钥正则（`sk-…` / `*_API_KEY=<16 位以上>` / `Bearer <20 位以上>`）在 `.md` 与全仓文本里仍是 0 命中。
+转公开真正改变的只是「标准答案 xlsx 现在任何人可读」，这是用户在知情前提下做的选择。
+
+**网络仍然是抖动的**：本次操作期间 `github.com:443` 时而可达时而连接失败
+（匿名 `git ls-remote` 与网页 `github.com/...` 各失败一次），
+而 `api.github.com` 与 `raw.githubusercontent.com` 全程可用。
+⇒ 13.14 把它判成「不对称封锁」是**错的**，正确描述是**间歇性不可达**；
+涉及 `github.com` 的操作要重试，涉及 API/raw 的操作可以直接依赖。
+
+**远端历史的形状**（更新 13.15 的说法）：交付提交 `dc43c25` + 文档更正提交（13.15、本节各一），
+仍不伪造施工过程。
