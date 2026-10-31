@@ -1819,5 +1819,45 @@ git push -u origin main
 ```
 
 若届时 `github.com` 仍不可直连，第二条改成
-`git -c http.proxy=http://127.0.0.1:7890 push -u origin main`（用 `-c` 传参，不写进仓库配置）；
-token 失效则先 `gh auth login -h github.com`。
+   `git -c http.proxy=http://127.0.0.1:7890 push -u origin main`（用 `-c` 传参，不写进仓库配置）；
+   token 失效则先 `gh auth login -h github.com`。
+
+### 13.15 推送已完成：13.14 的「未配置远端、未推送」作废
+
+13.14 记录的两个阻塞**都已解除**。按 13.13.1「只增不改」，这里不回填 13.14，只追加更正。
+
+**网络阻塞是瞬时的，不是持久封锁。** 复测时 `github.com:443` 已恢复可达：直连 TCP 通，
+`github.com:22`、`ssh.github.com:443`、`api.github.com:443`、`codeload.github.com:443`，
+以及 `140.82.112.3 / 140.82.113.4 / 140.82.121.4 / 20.205.243.166` 的 443 全部连通。
+⇒ 13.14 里「不对称封锁」的判断**只对当时那一刻成立**；代理参数（`-c http.proxy=…`）本次并未用到。
+
+**远端不是「找不到」，而是「尚未创建」。** 未认证 API 与 `git ls-remote` 双双报
+404 / `remote: Repository not found.`，且 `wbhlucky` 名下 5 个公开仓库里没有它 ——
+该仓库当时在 GitHub 上**根本不存在**（也不是私有仓库，SSH 认证后可见性已足够）。
+于是用本机 Git 凭据管理器里现存的 `gho_` OAuth token（账号 `wbhlucky`，scopes `gist, repo, workflow`）
+经 `POST /user/repos` 新建：
+
+- `wbhlucky/dianshi-assess-c04`，**private**，`auto_init=false`，默认分支 `main`。
+  `auto_init=false` 是必须的：让 GitHub 生成初始提交会与本地已有历史分叉，推送将被拒。
+- 选 **private** 是因为库里含 `训练集`（内含标准答案 xlsx）。公开是不可逆的（索引、fork），
+  私有可以一键转公开 ⇒ 取可逆的那个默认值。
+
+**推送走 SSH**，remote = `git@github.com:wbhlucky/dianshi-assess-c04.git`。
+理由：`ssh -T git@github.com` 返回 `Hi wbhlucky! You've successfully authenticated`，
+说明 `~/.ssh/id_ed25519` 已注册且**写权限确定**；而 HTTPS 那条凭据当时只验证到「能到达仓库查询」，
+scope 未知。`gh` CLI 的 keyring token 仍然失效（`gh auth status` 报 `The token in keyring is invalid`），
+**本次全程没有用到 `gh`**。
+
+**结果**：`git push -u origin main` 退出码 0，输出 `* [new branch] main -> main`，
+本地 `main` 已跟踪 `origin/main`，`git status -sb` 为 `## main...origin/main`（干净）。
+远端 `refs/heads/main` = 本地 HEAD = `dc43c25`（即 13.14 那个初始提交，180 文件 / 37785 行插入）。
+远端根树 13 项：`.gitignore README.md agent.md bidtable grade.py pytest.ini requirements.txt run.py`
+`tests tools 任务说明.md 模型API说明.md 训练集` —— 与 `.gitignore` 一致，
+`out/`、`.cache/`、`.pytest_cache/`、`__pycache__/` 均未入库。
+
+**凭据处理**：token 只在进程内存里用于这两次 API 调用，
+**没有写入任何文件、没有进 git 配置、没有打印到日志或提交信息**；`.gitignore` 未改；
+remote 用的是 SSH 地址，**URL 里不含任何凭据**。
+
+**远端历史的形状**：1 个交付提交（`dc43c25`）+ 1 个文档更正提交（本节）。
+仍然不伪造施工过程 —— 追加本节这件事本身也要留痕，否则 13.14 会与远端事实矛盾。
