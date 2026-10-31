@@ -1,0 +1,19 @@
+{
+ "scopes": [
+  {
+   "lot_no": "1",
+   "device_name": "4K3D 腹腔镜摄像系统",
+   "quantity": "1套",
+   "is_service": false
+  },
+  {
+   "lot_no": "2",
+   "device_name": "设备运维技术服务",
+   "quantity": "5年",
+   "is_service": true
+  }
+ ],
+ "warnings": [],
+ "missing": [],
+ "template_xlsx": "训练集\\P3\\03_响应偏离表_模板.xlsx"
+}

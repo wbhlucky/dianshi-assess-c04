@@ -1,0 +1,17 @@
+.env
+*.key
+__pycache__/
+.venv/
+node_modules/
+*.pyc
+.DS_Store
+~$*
+
+# 阶段缓存与运行产物（可随时删掉重算，不入库）
+.cache/
+out/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/

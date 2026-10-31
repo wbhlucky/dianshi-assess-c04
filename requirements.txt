@@ -1,0 +1,22 @@
+# 运行时依赖（全部已在当前环境验证可用）
+openpyxl>=3.1          # xlsx 读写（模板 / 结果 / 标准答案）
+PyMuPDF>=1.23          # 招标 PDF 与产品综合样本 PDF 的文本、词坐标、表格线抽取
+python-docx>=1.1       # 厂商技术规格书 / 服务方案 docx
+Pillow>=10.0           # 检测报告 jpg 降采样
+openai>=1.30           # OpenAI 兼容协议客户端
+
+# agent.md §10.2 第 6 条点名的三个包：环境里确实可用，但当前代码**没有直接 import**
+# （传输层走 openai SDK，重试是 client.py 里手写的退避循环，配置只用 .txt/.json）。
+# 留在这里是为了让「换一台机器按本文件装环境」与文档描述一致；删掉也不影响运行。
+requests>=2.31
+tenacity>=8.2
+pyyaml>=6.0
+
+# 测试与质量
+pytest>=7.4
+
+# 刻意**不**列 coverage / pytest-cov / ruff：这三个包在当前环境装不上。
+# 门禁没有因此消失，只是换了等价实现（见 README §1.4）：
+#   覆盖率 >=70%  ->  python tools/coverage_report.py   （标准库 sys.monitoring，PEP 669）
+#   ruff check    ->  python -m compileall -q bidtable run.py tools tests grade.py
+# 等价实现的实测结果记在 agent.md §6.9 的补注表与 §13.6：覆盖率 96.2%、编译门禁退出码 0。

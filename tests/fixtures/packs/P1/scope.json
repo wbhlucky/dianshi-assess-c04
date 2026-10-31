@@ -1,0 +1,19 @@
+{
+ "scopes": [
+  {
+   "lot_no": "1",
+   "device_name": "钬激光治疗机",
+   "quantity": "1台",
+   "is_service": false
+  },
+  {
+   "lot_no": "2",
+   "device_name": "设备运维技术服务",
+   "quantity": "5年",
+   "is_service": true
+  }
+ ],
+ "warnings": [],
+ "missing": [],
+ "template_xlsx": "训练集\\P1\\03_响应偏离表_模板.xlsx"
+}

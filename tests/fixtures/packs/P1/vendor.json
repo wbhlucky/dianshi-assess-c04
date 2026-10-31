@@ -1,0 +1,297 @@
+{
+ "evidence": [
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "技术规格书",
+   "filename": "YF_YF-9834Pro_技术规格书.docx",
+   "locator": "技术规格书 表行1",
+   "name": "电子膀胱肾盂镜",
+   "value": "（1）分辨率≥16 万像素，插入管外径：≤8 Fr，器械通道：≥3.6 Fr，工作长度：≥670 mm。（2）可适用于低温等离子、环氧乙烷灭菌。（3）电子内窥镜图像处理器；一体化视频插头，与电子硬镜主机通用，电子硬和软镜自由切换，使用方便快捷。",
+   "response_text": "电子膀胱肾盂镜：（1）分辨率≥16 万像素，插入管外径：≤8 Fr，器械通道：≥3.6 Fr，工作长度：≥670 mm。（2）可适用于低温等离子、环氧乙烷灭菌。（3）电子内窥镜图像处理器；一体化视频插头，与电子硬镜主机通用，电子硬和软镜自由切换，使用方便快捷。",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "技术规格书",
+   "filename": "YF_YF-9834Pro_技术规格书.docx",
+   "locator": "技术规格书 表行2",
+   "name": "配置清单",
+   "value": "（1）Ho:YAG 激光治疗机主机1 台（2）脚踏开关1 个（3）可复用光纤4 根（4）光纤剥离器1 把（5）光纤切割笔1 把（6）手持光纤端面检测仪1 把（7）激光防护镜1 副（8）电子膀胱肾盂镜2 根（9）电子内窥镜图像处理系统1 套",
+   "response_text": "配置清单：（1）Ho:YAG 激光治疗机主机1 台（2）脚踏开关1 个（3）可复用光纤4 根（4）光纤剥离器1 把（5）光纤切割笔1 把（6）手持光纤端面检测仪1 把（7）激光防护镜1 副（8）电子膀胱肾盂镜2 根（9）电子内窥镜图像处理系统1 套",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "技术规格书",
+   "filename": "YF_YF-9834Pro_技术规格书.docx",
+   "locator": "技术规格书 表行3",
+   "name": "272μm光纤最大传输功率",
+   "value": "84W",
+   "response_text": "272μm光纤最大传输功率：84W",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "技术规格书",
+   "filename": "YF_YF-9834Pro_技术规格书.docx",
+   "locator": "技术规格书 表行4",
+   "name": "连续工作无衰减时长",
+   "value": "8小时",
+   "response_text": "连续工作无衰减时长：8小时",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "技术规格书",
+   "filename": "YF_YF-9834Pro_技术规格书.docx",
+   "locator": "技术规格书 表行5",
+   "name": "控制方式/软硬镜模式",
+   "value": "支持（控制方式:全触摸彩色控制屏上有软镜模式和硬镜模式。）",
+   "response_text": "控制方式/软硬镜模式：支持（控制方式:全触摸彩色控制屏上有软镜模式和硬镜模式。）",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "技术规格书",
+   "filename": "YF_YF-9834Pro_技术规格书.docx",
+   "locator": "技术规格书 表行6",
+   "name": "指示光功率",
+   "value": "5mW",
+   "response_text": "指示光功率：5mW",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "技术规格书",
+   "filename": "YF_YF-9834Pro_技术规格书.docx",
+   "locator": "技术规格书 表行7",
+   "name": "临床用途",
+   "value": "暂不支持",
+   "response_text": "临床用途：暂不支持",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "2",
+   "model": "YF-1509Pro",
+   "doc_type": "服务方案",
+   "filename": "YF_服务方案.docx",
+   "locator": "服务方案 表行1",
+   "name": "技术培训",
+   "value": "每年为采购人的设备操作人员提供3 次技术培训，每次培训≥1 天，须由专业技术人员至少就有关安全规范、操作使用、应急处理方面内容进行详细培训，使受训人员能熟练掌握整套设备的使用方法以及操作命令的使用，了解系统的结构组成和工作原理，并组织对受训人员进行培训考核，直至受训人员考核合格，并向采购人提供培训和考核记录。",
+   "response_text": "技术培训：每年为采购人的设备操作人员提供3 次技术培训，每次培训≥1 天，须由专业技术人员至少就有关安全规范、操作使用、应急处理方面内容进行详细培训，使受训人员能熟练掌握整套设备的使用方法以及操作命令的使用，了解系统的结构组成和工作原理，并组织对受训人员进行培训考核，直至受训人员考核合格，并向采购人提供培训和考核记录。",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "2",
+   "model": "YF-1509Pro",
+   "doc_type": "服务方案",
+   "filename": "YF_服务方案.docx",
+   "locator": "服务方案 表行2",
+   "name": "设备运行维护",
+   "value": "标准配置不含，可按需定制",
+   "response_text": "设备运行维护：标准配置不含，可按需定制",
+   "priority": 1,
+   "is_pointer": false,
+   "confidence": 1.0
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第1页",
+   "name": "钬激光治疗系统配置要求",
+   "value": "（1）Ho:YAG 激光治疗机主机1 台（2）脚踏开关1 个（3）可复用光纤4根（4）光纤剥离器1 把（5）光纤切割笔1 把（6）手持光纤端面检测仪1 把（7）激光防护镜1 副（8）电子膀胱肾盂镜2 根（9）电子内窥镜图像处理系统1 套",
+   "response_text": "钬激光治疗系统配置要求：（1）Ho:YAG 激光治疗机主机1 台（2）脚踏开关1 个（3）可复用光纤4根（4）光纤剥离器1 把（5）光纤切割笔1 把（6）手持光纤端面检测仪1 把（7）激光防护镜1 副（8）电子膀胱肾盂镜2 根（9）电子内窥镜图像处理系统1 套",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第1页",
+   "name": "连续工作无衰减时长",
+   "value": "8 小时",
+   "response_text": "连续工作无衰减时长：8 小时",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第1页",
+   "name": "配备电子膀胱肾盂镜",
+   "value": "（1）分辨率≥16 万像素，插入管外径：≤8 Fr，器械通道：≥3.6 Fr，工作长度：≥670 mm。（2）可适用于低温等离子、环氧乙烷灭菌。（3）电子内窥镜图像处理器；一体化视频插头，与电子硬镜主机通用，电子硬和软镜自由切换，使用方便快捷。",
+   "response_text": "配备电子膀胱肾盂镜：（1）分辨率≥16 万像素，插入管外径：≤8 Fr，器械通道：≥3.6 Fr，工作长度：≥670 mm。（2）可适用于低温等离子、环氧乙烷灭菌。（3）电子内窥镜图像处理器；一体化视频插头，与电子硬镜主机通用，电子硬和软镜自由切换，使用方便快捷。",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第1页",
+   "name": "272μm 光纤最大传输功率",
+   "value": "84W",
+   "response_text": "272μm 光纤最大传输功率：84W",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第1页",
+   "name": "指示光功率",
+   "value": "5mW",
+   "response_text": "指示光功率：5mW",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第1页",
+   "name": "200μm 光纤弯曲6mm 时传输效率",
+   "value": "83%",
+   "response_text": "200μm 光纤弯曲6mm 时传输效率：83%",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第1页",
+   "name": "200μm 软光纤最小弯曲半径",
+   "value": "4cm",
+   "response_text": "200μm 软光纤最小弯曲半径：4cm",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "检测报告",
+   "filename": "YF_YF-9834Pro_检测报告.jpg",
+   "locator": "检测报告 第1页 表行1",
+   "name": "脉冲宽度可调范围",
+   "value": "",
+   "response_text": "脉冲宽度可调范围：详见检测报告",
+   "priority": 0,
+   "is_pointer": true,
+   "confidence": 0.5
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "检测报告",
+   "filename": "YF_YF-9834Pro_检测报告.jpg",
+   "locator": "检测报告 第1页 表行2",
+   "name": "光纤终端最大平均输出功率",
+   "value": "",
+   "response_text": "光纤终端最大平均输出功率：详见检测报告",
+   "priority": 0,
+   "is_pointer": true,
+   "confidence": 0.5
+  },
+  {
+   "lot_no": "1",
+   "model": "YF-9834Pro",
+   "doc_type": "检测报告",
+   "filename": "YF_YF-9834Pro_检测报告.jpg",
+   "locator": "检测报告 第1页 表行3",
+   "name": "激光耦合效率",
+   "value": "",
+   "response_text": "激光耦合效率：详见检测报告",
+   "priority": 0,
+   "is_pointer": true,
+   "confidence": 0.5
+  },
+  {
+   "lot_no": "2",
+   "model": "YF-1509Pro",
+   "doc_type": "产品综合样本",
+   "filename": "产品综合样本.pdf",
+   "locator": "产品综合样本 第2页",
+   "name": "技术培训",
+   "value": "每年为采购人的设备操作人员提供3 次技术培训，每次培训≥1 天，须由专业技术人员至少就有关安全规范、操作使用、应急处理方面内容进行详细培训，使受训人员能熟练掌握整套设备的使用方法以及操作命令的使用，了解系统的结构组成和工作原理，并组织对受训人员进行培训考核，直至受训人员考核合格，并向采购人提供培训和考核记录。",
+   "response_text": "技术培训：每年为采购人的设备操作人员提供3 次技术培训，每次培训≥1 天，须由专业技术人员至少就有关安全规范、操作使用、应急处理方面内容进行详细培训，使受训人员能熟练掌握整套设备的使用方法以及操作命令的使用，了解系统的结构组成和工作原理，并组织对受训人员进行培训考核，直至受训人员考核合格，并向采购人提供培训和考核记录。",
+   "priority": 2,
+   "is_pointer": false,
+   "confidence": 0.9
+  }
+ ],
+ "warnings": [
+  "YF_YF-9834Pro_检测报告.jpg：模型不可用，检测报告实测值无法读取；相关行按「已出具第三方检测报告」推定为无偏离并打 ocr_failed 旗标，请人工复核。"
+ ],
+ "lotmap": {
+  "model_to_lot": {
+   "YF-9834Pro": "1",
+   "YF-1509Pro": "2"
+  },
+  "lot_to_model": {
+   "1": "YF-9834Pro",
+   "2": "YF-1509Pro"
+  },
+  "sources": {
+   "YF-9834Pro": [
+    "产品综合样本·订购信息",
+    "技术规格书·抬头"
+   ],
+   "YF-1509Pro": [
+    "产品综合样本·订购信息",
+    "服务方案·抬头"
+   ]
+  }
+ },
+ "counts": {
+  "厂商证据": 20,
+  "检测报告指针": 3,
+  "OCR 成功": 0,
+  "报告张数": 1,
+  "技术规格书": 7,
+  "服务方案": 2,
+  "产品综合样本": 8,
+  "检测报告": 3
+ }
+}

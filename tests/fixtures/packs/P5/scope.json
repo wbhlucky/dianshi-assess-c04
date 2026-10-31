@@ -1,0 +1,31 @@
+{
+ "scopes": [
+  {
+   "lot_no": "1",
+   "device_name": "床旁血液净化系统",
+   "quantity": "1台",
+   "is_service": false
+  },
+  {
+   "lot_no": "5",
+   "device_name": "红外辐照治疗装置",
+   "quantity": "1台",
+   "is_service": false
+  },
+  {
+   "lot_no": "8",
+   "device_name": "胰岛素泵",
+   "quantity": "10台",
+   "is_service": false
+  },
+  {
+   "lot_no": "12",
+   "device_name": "激光治疗仪",
+   "quantity": "1None",
+   "is_service": false
+  }
+ ],
+ "warnings": [],
+ "missing": [],
+ "template_xlsx": "训练集\\P5\\03_响应偏离表_模板.xlsx"
+}

@@ -1,0 +1,13 @@
+{
+ "scopes": [
+  {
+   "lot_no": "1",
+   "device_name": "热蒸汽治疗设备",
+   "quantity": "1台",
+   "is_service": false
+  }
+ ],
+ "warnings": [],
+ "missing": [],
+ "template_xlsx": "训练集\\P4\\03_响应偏离表_模板.xlsx"
+}
